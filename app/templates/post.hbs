@@ -1,0 +1,12 @@
+
+
+{{#each main as |post|}}
+	<div>
+		<img class="img-responsive" {{ bind-attr src="post.featured_image_url"}}>
+		<h1>{{post.title.rendered}}</h1>
+		<div class="single-post">
+			{{{post.content.rendered}}}
+		</div>
+	</div>
+
+{{/each}}
